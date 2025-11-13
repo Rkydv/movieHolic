@@ -1,19 +1,12 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     var ul = document.querySelector("ul");
-//     if (ul) {
-//         // Proceed with using 'ul'
-//     } else {
-//         console.warn("No <ul> element found.");
-//     }
-// });
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Your code here, which can safely access the <ul>
-  })
-
-
 let movie=["The avengers","The avengers the end game"];
 let info=["Some info","Some info"];
+
+let newpara=document.querySelector(".form");
+let newM=document.querySelector("#newAdd");
+newM.addEventListener("click",()=>{
+    newpara.classList.add("vis");
+})
+
 
 let clear=document.getElementsByClassName("content");
 let allDel=document.querySelector("#del");
@@ -36,6 +29,7 @@ console.log(ul);
     // movie
     let myMovie=document.createElement('li');
     let con=document.createElement("div");
+    con.classList.add("content");
     let h3=document.createElement('h3');
     let p=document.createElement('p');
     h3.innerHTML=name;
@@ -53,6 +47,8 @@ console.log(ul);
     ul.appendChild(myMovie);
 
     // console.log(h3);
+
+     newpara.classList.remove("vis");
 })
 
 

@@ -49,14 +49,14 @@ button{
     text-align: center;
     border: 1px black solid;
     height: 35px;
-    width: 95px;
+    width: 125px;
     border-radius: 5px;
     background-color:red;
     color: white;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
-a{
+.adm{
     all: unset;
     display: block;
     /* padd */
@@ -65,7 +65,7 @@ a{
     text-align: center;
     border: 1px black solid;
     height: 35px;
-    width: 95px;
+    width: 115px;
     border-radius: 5px;
     background-color:red;
     color: white;
@@ -80,4 +80,10 @@ a{
 li{
     margin: 5px;
     /* all:unset; */
+}
+.form{
+    display: none;
+}
+.vis{
+    display: unset;
 }
